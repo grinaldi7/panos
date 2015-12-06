@@ -2,9 +2,113 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <title>Panos</title>
   </head>
   <body>
-    <p>En construcción...</p>
+    <script src="js/facebook-sdk.js"></script>
+
+    <div class="navbar-fixed">
+      <nav class="red darken-4">
+        <div class="nav-wrapper container">
+          <a href="#home" class="brand-logo">Panos</a>
+          <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#news"><i class="fa fa-newspaper-o left"></i>Noticias</a></li>
+            <li><a href="#contact"><i class="fa fa-envelope-o left"></i>Contacto</a></li>
+          </ul>
+          <ul class="side-nav" id="side-nav">
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <section id="home" class="scrollspy container section center">
+      <h1>Bienvenido</h1>
+      <p>Desde 1997, Panos diseña, construye y alquila los mejores stands para exposiciones y congresos. Se especializa en panelería, mobiliario, tarimas, alfombras, carpas, gráfica e instalaciones eléctricas.</p>
+    </section>
+    
+    <section id="news" class="scrollspy container section center">
+      <h1>Noticias</h1>
+      <div class="fb-page" data-href="https://www.facebook.com/PanosStands" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PanosStands"><a href="https://www.facebook.com/PanosStands">Panos Stands e Infraestructura para Eventos</a></blockquote></div></div>
+    </section>
+
+    <section id="contact" class="scrollspy container section center">
+      <h1>Contacto</h1>
+      <form action="//formspree.io/info@panos.com.ar"
+            method="POST">
+        <div class="input-field">
+          <i class="material-icons prefix">face</i>
+          <input id="name" type="text" name="name" required>
+          <label for="name">Nombre</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">phone</i>
+          <input id="phone" type="tel" name="phone">
+          <label for="phone">Teléfono</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" name="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">feedback</i>
+          <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+          <label for="message">Mensaje</label>
+        </div>
+        <input type="hidden" name="_subject" value="Contacto - Panos Website">
+        <input type="text" name="_gotcha" style="display:none;">
+        <button class="btn waves-effect waves-light" type="submit">Enviar
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </section>
+
+    <footer class="page-footer indigo darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Contáctenos</h5>
+            <ul class="white-text">
+              <li><i class="fa fa-map-marker fa-fw"></i> <a class="blue-text text-lighten-3 waves-effect waves-light modal-trigger" href="#map-rosario">Gálvez 5444</a></li>
+              <li><i class="fa fa-map-marker fa-fw"></i> S2009BRB Rosario, Argentina</li>
+              <li><i class="fa fa-phone fa-fw"></i> +54 341 568-0668</li>
+              <li><i class="fa fa-mobile fa-fw"></i> +54 341 502-2899</li>
+              <li><i class="fa fa-envelope fa-fw"></i> info@panos.com.ar</li>
+            </ul>
+          </div>
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Conéctese</h5>
+            <ul class="white-text">
+              <li><i class="fa fa-facebook fa-fw"></i><a class="grey-text text-lighten-3" href="https://www.facebook.com/PanosStands"> Facebook</a></li>
+              <li><i class="fa fa-twitter fa-fw"></i><a class="grey-text text-lighten-3" href="https://twitter.com/PanosStands" target="_blank"> Twitter</a></li>
+              <li><i class="fa fa-linkedin fa-fw"></i><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/panos-stands-e-infraestructura-para-eventos" target="_blank"> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Panos
+        <a class="grey-text text-lighten-4 right" href="https://www.juampi.com/">Desarrollado por Juan Pablo Rinaldi</a>
+        </div>
+      </div>
+      
+      <div id="map-rosario" class="modal">
+        <div class="modal-content center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26781.56866431!2d-60.707019999062474!3d-32.959032487040865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ac953b5d8d4f%3A0x4cc8dc8014664a4e!2sPanos!5e0!3m2!1sen!2sus!4v1449350188406" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
