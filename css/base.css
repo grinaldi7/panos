@@ -1,169 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,300italic);
-a {
-	text-decoration: none;
-	color:#1A75CF;
-	-moz-transition: ease-in-out 0.3s;
-    -o-transition: ease-in-out 0.3s;
-    -webkit-transition:ease-in-out 0.3s;
-}
-a:hover {
-	text-decoration: none;
-	color:#fff;
-	-moz-transition: ease-in-out 0.3s;
-    -o-transition: ease-in-out 0.3s;
-    -webkit-transition:ease-in-out 0.3s;
-}
-h1 {
-	font-size: 40px;
-	font-weight: 300;
-}
+
 body {
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
    line-height: 1.5;
-}
-  .lineablanca {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 0;
-	  color: #fff;
-}
-  hr { 
-    display: block ;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 2px;
-	border-color: #E87D0D;
-    width: 100px;
-   }
-   .divisor {
-     border-left-style:solid !important;
-	   border-left-color:#fff;
-	   border-left-width:1px !important;
-     border-right-style:solid !important;
-	   border-right-color:#fff;
-	   border-right-width:1px !important;
-   }
-   .bg-grey {
-     background-color: #f6f6f6;
-     padding: 80px 90px 80px 90px;
-   }
-   .bg-blue {
-     background-color: #1A75CF;
-     padding-bottom: 50px;
-	   padding-top: 50px;
-	   color: #fff !important;
-   }
-   .bg-white {
-     background-color: #fff;
-     padding: 40px 50px;
-   }
-   .container {
-     padding: 0px 0px;
-   }
-   .carousel-inner img { 
-     width: 100%; /* Set width to 100% */
-     margin: auto;
-   }
-   .marc { 
-     width: 50%;
-     margin: auto;
-   }
-    .carousel-caption {
-     right: 5%;
-     left: 5%;
-    }
-   .carousel-caption h3 {
-     color: #fff !important;
-   }
-   .carousel-caption h1 {
-     font-size: 60px;
-     line-height: 0.9;
-     font-weight: 400;
-   }
-   .carousel-caption h2 {
-     font-size: 35px;
-     line-height: 0.9;
-     font-weight: 400;
-   }
-   @media (max-width: 600px) {
-     .carousel-caption  {
-     visibility: hidden;
-    }}
-
-   @media (max-width: 1100px) {
-     .carousel-caption h1 {
-     font-size: 40px;
-     line-height: 0.9;
-     font-weight: 400;
-    }}
-    @media (max-width: 700px) {
-     .carousel-caption h1 {
-     font-size: 20px;
-     line-height: 0.9;
-     font-weight: 400;
-    }}
-   .navbar-default {
-     background-color: transparent;
-     border: none;
-     margin-bottom: 0px;
-     position: fixed;
-     width: 100%;
-     border-radius: 0px;
-     z-index: 10007;
-	   opacity; 0.8;
-     -webkit-transition: all 0.6s ease-in-out;
-     -moz-transition: all 0.6s ease-in-out;
-     transition: all 0.6s ease-in-out;
-   }
-    .navbar-nav li a:hover {
-     color: #fff !important;
-	   opacity: 0.9;
-   }
-    .navbar li a, .navbar .navbar-brand { 
-     color:#fff !important;
-     opacity: 0.9;	 
-   }
-    .navbar-brand {
-     padding: 10px;
-	   padding-left: 20px;
-   }
-   .navbar-nav li.active a {
-     color: #1A75CF !important;
-     background-color:#f6f6f6 !important;
-	   -webkit-transition: all 0.3s ease-in-out;
-     -moz-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
-	   -webkit-transition-delay: 0s;
-  	 -moz-transition-delay: 0s;
-     transition-delay: 0s;
-    }
-   .port {
-     background-image: url("../img/fondo3.jpg");
-     background-attachment: fixed;
-     background-position: center;
-     padding:70px 0 20px 0;
-     color: #fff !important;
-	   background-size: cover;
-    }
-   .client {
-     background-image: url("../img/fondo1.jpg");
-     background-attachment: fixed;
-     background-position: center;
-	   min-height: 150px;
-     padding: 3% 1%;
-     color: #fff !important;
-	   background-size: cover;
-}
-   h1{
-     font-size: 36px;
-}
-   .bigtext {
-     font-size: 50px;
-     line-height: 1;
 }
   .thumbnail {
      padding: 0 0 15px 0;
@@ -175,6 +15,22 @@ body {
      height: 100%;
      margin-bottom: 10px;
 } 
+hr { 
+    display: block ;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E87D0D;
+    width: 100px;
+   }
+   .divisor {
+     border-left-style:solid !important;
+     border-left-color:#fff;
+     border-left-width:1px !important;
+     border-right-style:solid !important;
+     border-right-color:#fff;
+     border-right-width:1px !important;
+   }
   .nopadding {
      padding: 0 !important;
      margin: 0 !important;
@@ -193,52 +49,15 @@ body {
   .ptop {
    padding-top: 40px !important;
 }
-.nopleft {
-  padding-left: 0px;
-}
-.nopright {
-  padding-right: 0px;
-}
   .galery {
      padding: 50px 0  50px 0;
-	   background-color: #1A75CF;
+	 background-color: #1A75CF;
      -moz-transition: opacity ease-in-out 4s;
      -o-transition: opacity ease-in-out 4s;
      -webkit-transition: opacity ease-in-out 4s;
      transition: opacity ease-in-out 4s;
 }
-  .slideanim {visibility:hidden;}
-  .slideon {
-    /* The name of the animation */
-    animation-name: slideon;
-    -webkit-animation-name: slideon; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-}
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slideon {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slideon {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }	
-}
+
   .carousel-indicators li {
     border-width: 0px;
     background-color: #fff;
@@ -257,12 +76,7 @@ body {
     text-align: left;
     margin-left: 0%;
 }
-  .captionwrap {
-     top: 50%;
-     top:50%;
-     transform: translateY(-50%);
-     bottom: initial;
- }
+
    .item {
      -webkit-transform-style: preserve-3d;
      -moz-transform-style: preserve-3d;
@@ -325,19 +139,6 @@ outline:0;
    padding-left: 0px;
    padding-right: 0px;
   }
- .cat {
-     background-image: url("../img/fondo2.jpg");
-     background-attachment: fixed;
-     background-position: center;
-     padding:90px 90px 60px 90px;
-     color: #fff !important;
-	   background-size: cover;
-  }
- .cat .container {
-    padding-top:40px;
-    padding-bottom: 40px;
-    margin:0px auto !important;
-}   
   .panel-group .panel-default .panel-heading  {
     background-color:#B3B3B3;
   }
@@ -455,40 +256,7 @@ outline:0;
    -o-transition: ease-in-out 0.2s;
    -webkit-transition:ease-in-out 0.2s;
 }
-.round-button {
-  width:3%;
- display: block;
- min-width: 50px;
-}
-.round-button-circle {
-   width: 100%;
-   position: relative;
-   height:0;
-   padding-bottom: 100%;
-   border-radius: 50%;
-   background-color: #E87D0D;
-   top:205%;
-   transform: translateY(-205%);
-   z-index: 9999;   
-}
-.round-button a {
-  display:block;
-   float:left;
-   width:100%;
-   padding-top:50%;
-   padding-bottom:50%;
-   line-height:1em;
-   margin-top:-0.5em; 
-   text-align:center;
-   color:#fff;
-   font-family:Verdana;
-   font-weight:bold;
-   text-decoration:none; 
-}
-footer .round-button-circle {
-   top:0%;
-   transform: translateY(0%);
-}
+
 .pie {
    background-color: #f6f6f6;
    padding: 40px 90px 40px 90px;

@@ -5,16 +5,256 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Panos S.A">
-  <meta http-equiv="expires" content="fecha en formato GMT" >
   <meta name="description" content="Servicios de panelería, grafica, diseño y montaje de stands para eventos y exposiciones.">
   <meta name="keywords" content="stands, paneleria, grafica, octanorm, expo">
   <link rel="stylesheet" href="css/normalize.css" type='text/css'>
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="css/ihover.css" rel="stylesheet" type='text/css'>
-  <link href="css/animate.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css" type="text/css">
   <link rel="shortcut icon" href="img/favicon.ico">
+ <style>
+
+
+a {
+  text-decoration: none;
+  color:#1A75CF;
+  -moz-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    -webkit-transition:ease-in-out 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  color:#fff;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition:ease-in-out 0.3s;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+ .bg-grey {
+     background-color: #f6f6f6;
+     padding: 80px 90px 80px 90px;
+   }
+   .bg-blue {
+     background-color: #1A75CF;
+     padding-bottom: 50px;
+     padding-top: 50px;
+     color: #fff !important;
+   }
+   .bg-white {
+     background-color: #fff;
+     padding: 40px 50px;
+   }
+   .container {
+     padding: 0px 0px;
+   }
+   .port {
+     background-image: url("img/fondo3.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     padding:70px 0 20px 0;
+     color: #fff !important;
+     background-size: cover;
+    }
+   .client {
+     background-image: url("img/fondo1.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     min-height: 150px;
+     padding: 3% 1%;
+     color: #fff !important;
+     background-size: cover;
+   }
+    .cat {
+     background-image: url("img/fondo2.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     padding:90px 90px 60px 90px;
+     color: #fff !important;
+	   background-size: cover;
+  }
+ .cat .container {
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin:0px auto !important;
+} 
+   .navbar-default {
+     background-color: transparent;
+     border: none;
+     margin-bottom: 0px;
+     position: fixed;
+     width: 100%;
+     border-radius: 0px;
+     z-index: 10007;
+     opacity; 0.8;
+     -webkit-transition: all 0.6s ease-in-out;
+     -moz-transition: all 0.6s ease-in-out;
+     transition: all 0.6s ease-in-out;
+   }
+    .navbar-nav li a:hover {
+     color: #fff !important;
+     opacity: 0.9;
+   }
+    .navbar li a, .navbar .navbar-brand { 
+     color:#fff !important;
+     opacity: 1;   
+   }
+    .navbar-brand {
+     padding: 10px;
+     padding-left: 20px;
+   }
+   .navbar-nav li .active a {
+     color: #1A75CF !important;
+     background-color:#f6f6f6 !important;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     transition-delay: 0s;
+    }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+     color: #1A75CF !important;
+     background-color:#f6f6f6 !important;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     transition-delay: 0s;
+    }
+    .lineablanca {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 0;
+    color: #fff;
+}
+    .carousel-inner img { 
+     width: 100%; /* Set width to 100% */
+     margin: auto;
+   }
+   .marc { 
+     width: 50%;
+     margin: auto;
+   }
+    .carousel-caption {
+     right: 5%;
+     left: 5%;
+    }
+   .carousel-caption h3 {
+     color: #fff !important;
+   }
+   .carousel-caption h1 {
+     font-size: 60px;
+     line-height: 0.9;
+     font-weight: 400;
+   }
+   .carousel-caption h2 {
+     font-size: 35px;
+     line-height: 0.9;
+     font-weight: 400;
+   }
+   @media (max-width: 600px) {
+     .carousel-caption  {
+     visibility: hidden;
+    }}
+
+   @media (max-width: 1100px) {
+     
+     .carousel-caption h1 {
+     font-size: 40px;
+     line-height: 0.9;
+     font-weight: 400;
+    }}
+    
+    @media (max-width: 700px) {
+     .carousel-caption h1 {
+     font-size: 20px;
+     line-height: 0.9;
+     font-weight: 400;
+    }}
+   .bigtext {
+     font-size: 50px;
+     line-height: 1;
+}
+ .captionwrap {
+     top: 50%;
+     transform: translateY(-50%);
+ }
+   .slideanim {visibility:hidden;}
+  .slideon {
+    /* The name of the animation */
+    animation-name: slideon;
+    -webkit-animation-name: slideon; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slideon {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slideon {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }	
+}
+.nopleft {
+  padding-left: 0px;
+}
+.nopright {
+  padding-right: 0px;
+}
+.round-button {
+  width:3%;
+ display: block;
+ min-width: 50px;
+}
+.round-button-circle {
+   width: 100%;
+   position: relative;
+   height:0;
+   padding-bottom: 100%;
+   border-radius: 50%;
+   background-color: #E87D0D;
+   top:205%;
+   transform: translateY(-205%);
+   z-index: 9999;   
+}
+.round-button a {
+  display:block;
+   float:left;
+   width:100%;
+   padding-top:50%;
+   padding-bottom:50%;
+   line-height:1em;
+   margin-top:-0.5em; 
+   text-align:center;
+   color:#fff;
+   font-family:Verdana;
+   font-weight:bold;
+   text-decoration:none; 
+}
+footer .round-button-circle {
+   top:0%;
+   transform: translateY(0%);
+}
+</style>
+  
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -49,12 +289,21 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
 	    <li data-target="#myCarousel" data-slide-to="3"></li>
 	    <li data-target="#myCarousel" data-slide-to="4"></li>
+	    <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 	
     <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+    
+      <div class="item active">
+        <img src="img/fond/img9.jpg" alt="Stand Agrometal 2016" width="1200" height="700">
+        <div class="text-left carousel-caption">
+        <h2 class="text-left slideInLeft animated">NOVEDADES<br>STAND AGROMETAL<br></h2>
+          <p class="text-left col-sm-3 nopleft"><i>Construimos el nuevo stand para AGROMETAL en Expoagro 2016.</i></p>
+        </div>      
+      </div>
 
-    <div class="item active">
+    <div class="item">
         <img src="img/fond/img4.jpg" alt="Stand Acindar 2015" width="1200" height="700">
         <div class="text-left carousel-caption">
         <h2 class="text-left slideInLeft animated">STAND<br>ACINDAR SIAR 2015<br></h2>
@@ -99,9 +348,6 @@
           <p class="text-left col-sm-3 nopleft"><i>Flota propia de vehiculos de carga.</i></p>
         </div>      
       </div>
-	  
-	  
-	  
 
     </div> 
 </section>
@@ -715,11 +961,11 @@
 
     <div class="col-sm-2 col-xs-6 nopadding mix stand caja">
 
-      <div class="ih-item square effect6 bottom_to_top minpadding"><a href="#">
-          <div class="img"><img src="img/port/luco.jpg" alt="alt"></div>
+      <div class="ih-item square effect6 bottom_to_top minpadding"><a href="#agrometal" data-toggle="modal">
+          <div class="img"><img src="img/port/agrometal.jpg" alt="Stand Agrometal"></div>
           <div class="info">
-            <h3>STAND LUCO</h3>
-            <p>Diseño, impresión y montaje de stand.</p>
+            <h3>STAND AGROMETAL</h3>
+            <p>Producción y montaje integral de stand.</p>
           </div></a></div>
    
     </div>
@@ -2396,6 +2642,75 @@
         </div>
       </div>
     </div><!-- Final modal fam -->
+    
+    <!-- Inicio modal agrometal -->
+    <div class="modal fade bs-example-modal-lg" id="agrometal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div id="carousel-agrometal" class="carousel slide" data-ride="carousel">
+
+       <ol class="carousel-indicators">
+          <li data-target="#carousel-agrometal" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="1"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="2"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="3"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="4"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="5"></li>
+          <li data-target="#carousel-agrometal" data-slide-to="6"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+         <img class="img-responsive" src="img/port/agrometal/1.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/2.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/3.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/4.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/5.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/6.jpg" alt="AGROMETAL">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/port/agrometal/7.jpg" alt="AGROMETAL">
+        </div>
+      
+      </div>
+
+      </div>
+
+       <div class="modal-footer">
+            <p>Ramallo, Bs. As.<br>
+            <i>Superficie construida | 200m2</i></p>
+            <br>
+            <div class="col-sm-3 nopleft">
+             <h4><span class="glyphicon glyphicon-tag"></span> Evento<br></h4>
+              <i>Expoagro 2016</i>
+            </div>
+            <div class="col-sm-3 nopleft">
+             <h4><span class="glyphicon glyphicon-calendar"></span> Fecha<br></h4>
+              <i>Mar. 2016</i>
+            </div>
+            <div class="col-sm-3 nopleft">
+             <h4><span class="glyphicon glyphicon-flag"></span> Predio<br></h4>
+              <i>Ramallo Bs. As.</i>
+            </div>
+            <button type="button"  class="close" data-dismiss="modal">&times;</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- Final modal agrometal -->
+
 
 
 </section><!-- final galeria -->
@@ -2411,7 +2726,7 @@
         <br>
         Dividido en tres categorias, contiene todas las caracteristicas y medidas de cada elemento. <br> 
         El apartado <b>OCTANORM</b>® incluye las medidas detalladas de los mobiliarios y elementos que componen el sistema.
-        <a href="#" class="btn bot2">DESCARGAR CATALOGO COMPLETO</a> 
+
       </article>
       <article class="col-sm-8">
 
@@ -2731,3 +3046,7 @@ $(function() {
   
 </body>
 </html>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link href="css/ihover.css" rel="stylesheet" type='text/css'>
+<link href="css/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" type="text/css">
