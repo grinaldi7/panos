@@ -8,14 +8,17 @@
   <meta name="description" content="Servicios de panelería, grafica, diseño y montaje de stands para eventos y exposiciones.">
   <meta name="keywords" content="stands, paneleria, grafica, octanorm, expo">
   <link rel="stylesheet" href="css/normalize.css" type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="shortcut icon" href="img/favicon.ico">
- <style>
+  
+  <link href="css/ihover.css" rel="stylesheet" type='text/css'>
+  <link href="css/animate.css" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/base.css" type="text/css">
 
-body {
-   background-color: #161616;
-}
 
+<style>
+ 
 a {
   text-decoration: none;
   color:#1A75CF;
@@ -52,6 +55,7 @@ h1 {
      padding: 0px 0px;
    }
    .port {
+     background-color: #161616;
      background-image: url("img/fondo3.jpg");
      background-attachment: fixed;
      background-position: center;
@@ -60,6 +64,7 @@ h1 {
      background-size: cover;
     }
    .client {
+     background-color: #161616;
      background-image: url("img/fondo1.jpg");
      background-attachment: fixed;
      background-position: center;
@@ -69,6 +74,7 @@ h1 {
      background-size: cover;
    }
     .cat {
+     background-color: #161616;
      background-image: url("img/fondo2.jpg");
      background-attachment: fixed;
      background-position: center;
@@ -89,7 +95,7 @@ h1 {
      width: 100%;
      border-radius: 0px;
      z-index: 10007;
-     opacity; 0.8;
+     opacity: 0.8;
      -webkit-transition: all 0.6s ease-in-out;
      -moz-transition: all 0.6s ease-in-out;
      transition: all 0.6s ease-in-out;
@@ -257,7 +263,7 @@ footer .round-button-circle {
    transform: translateY(0%);
 }
 </style>
-  
+ 
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -2842,7 +2848,6 @@ footer .round-button-circle {
                         </div> 
                   </form>
                 </article> 
-
         </div>   
       </div>
 </section>
@@ -2871,11 +2876,8 @@ footer .round-button-circle {
     </div> 
   </div>  
 </footer> 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <!--Start of Tawk.to Script-->
+  
+<!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
@@ -2888,10 +2890,31 @@ footer .round-button-circle {
   })();
   </script>
   <!--End of Tawk.to Script-->
+  
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+<script>
+$(function(){
+    $('#Container').mixItUp();
+});
+
+$('#Container').mixItUp({
+  animation: {
+    animateResizeContainer: true
+  }
+});
+</script>
+  
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
 <script>
+/*global google*/
 var myCenter = new google.maps.LatLng(-32.9599908, -60.6971541);
 
 function initialize() {
@@ -2914,142 +2937,7 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-$(document).ready(function(){       
-                var scroll_start = 0;
-                var startchange = $('#startchange');
-                var offset = startchange.offset();
-                    if (startchange.length){
-                $(document).scroll(function() { 
-                    scroll_start = $(this).scrollTop();
-                    if(scroll_start > offset.top) {
-                          $(".navbar-default").css('background-color', '#1A75CF');
-                       } else {
-                          $('.navbar-default').css('background-color', 'transparent');
-                       }
-                   });
-                    }
-                });
-				
-
-
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".round-button, .navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-  // Prevent default anchor click behavior
-  event.preventDefault();
-
-  // Store hash
-  var hash = this.hash;
-
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 900, function(){
-
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
-    });
-  });
-})
-
-$(window).scroll(function() {
-  $(".slideanim").each(function(){
-    var pos = $(this).offset().top;
-
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 850) {
-      $(this).addClass("slideon");
-    }
-  });
-});
-
-$(function(){
-    $('#Container').mixItUp();
-});
-
-$(document).ready(function(){
- 
-	$(window).scroll(function(){
-		var barra = $(window).scrollTop();
-		var posicion =  (barra * 0.10);
-		
-		$('.cat').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
- 
-	});
- 
-});
-
-$(function(){
-    $('#Container').mixItUp();
-});
-
-$(document).ready(function(){
- 
-	$(window).scroll(function(){
-		var barra = $(window).scrollTop();
-		var posicion =  (barra * 0.10);
-		
-		$('.port').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
- 
-	});
- 
-});
-
-$(document).ready(function(){
- 
-  $(window).scroll(function(){
-    var barra = $(window).scrollTop();
-    var posicion =  (barra * 0.10);
-    
-    $('.client').css({
-      'background-position': '0 -' + posicion + 'px'
-    });
- 
-  });
- 
-});
-
-$('#Container').mixItUp({
-  animation: {
-    animateResizeContainer: true
-  }
-});
-
-$(document).ready(function(){
-    function alignModal(){
-        var modalDialog = $(this).find(".modal-dialog");
-        
-        // Applying the top margin on modal dialog to align it vertically center
-        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 8));
-    }
-    // Align modal when it is displayed
-    $(".modal").on("shown.bs.modal", alignModal);
-    
-    // Align modal when user resize the window
-    $(window).on("resize", function(){
-        $(".modal:visible").each(alignModal);
-    });   
-});
-
-$(function() {
-  $('#closemodal').click(function() {
-    $('#mobi').modal('hide');
-});
-});
-
 </script>
-  
-  
+
 </body>
 </html>
-<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-<link href="css/ihover.css" rel="stylesheet" type='text/css'>
-<link href="css/animate.css" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css" type="text/css">

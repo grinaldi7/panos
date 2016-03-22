@@ -3,8 +3,9 @@
 body {
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
-   line-height: 1.5;
-}
+   line-height:1.5;
+} 
+
   .thumbnail {
      padding: 0 0 15px 0;
      border: none;
@@ -380,7 +381,7 @@ filter: none;
   border-top:none;
   padding:25px;
 }
-. .modal h4 {
+.modal h4 {
 display: inline;
 }
 .modal-title {
