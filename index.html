@@ -1113,9 +1113,6 @@ footer .round-button-circle {
       </div>
 </section>
 
-<!-- Set height and width with CSS -->
-<div id="googleMap" style="height:280px;width:100%;"></div>
-
 <!-- Footer -->
 <footer class="container-fluid text-center pie">
   <div class="col-sm-4 col-xs-12 slideon">
@@ -1151,35 +1148,6 @@ $('#Container').mixItUp({
     animateResizeContainer: true
   }
 });
-</script>
-
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
-<script>
-/*global google*/
-var myCenter = new google.maps.LatLng(-32.9599908, -60.6971541);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:15,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
 </script>
 
 <!--Start of Tawk.to Script-->
